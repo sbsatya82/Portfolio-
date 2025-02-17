@@ -1,13 +1,10 @@
-import React from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../assets/Projects/leaf.png";
-import emotion from "../../assets/Projects/emotion.png";
-import editor from "../../assets/Projects/codeEditor.png";
+
 import chatify from "../../assets/Projects/chatify.png";
-import suicide from "../../assets/Projects/suicide.png";
-import bitsOfCode from "../../assets/Projects/blog.png";
+
 
 function Projects() {
   return (
@@ -29,6 +26,18 @@ function Projects() {
               description="Personal Portfolio using React JS"
               ghLink="https://github.com/sbsatya82/Portfolio-"
               demoLink="https://portfolio-olive-six-92.vercel.app/"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatify}
+              isBlog={false}
+              title="Quotes-App"
+              description="quotes-app using React JS"
+              ghLink="https://github.com/sbsatya82/quotes-app"
+              demoLink="https://quotes-app-by-sb.netlify.app/"
             />
           </Col>
         </Row>
