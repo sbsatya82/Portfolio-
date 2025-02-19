@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import chatify from "../../assets/Projects/chatify.png";
+import chatapp from "../../assets/Projects/chat-app.png";
+import quoteapp from "../../assets/Projects/quote.png";
 
 
 function Projects() {
@@ -32,12 +34,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={quoteapp}
               isBlog={false}
               title="Quotes-App"
               description="quotes-app using React JS"
               ghLink="https://github.com/sbsatya82/quotes-app"
               demoLink="https://quotes-app-by-sb.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatapp}
+              isBlog={false}
+              title="Chat-App"
+              description="Chat App using Node JS, React JS, Socket.Io"
+              ghLink="https://github.com/sbsatya82/chat-app"
+              demoLink="https://chat-app-p2qm.onrender.com/"
             />
           </Col>
         </Row>
