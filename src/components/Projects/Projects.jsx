@@ -6,6 +6,8 @@ import Particle from "../Particle";
 import chatify from "../../assets/Projects/chatify.png";
 import chatapp from "../../assets/Projects/chat-app.png";
 import quoteapp from "../../assets/Projects/quote.png";
+import portfolio from "../../assets/Projects/portfolio.png";
+import ecommerce from "../../assets/Projects/ecommerce.png"
 
 
 function Projects() {
@@ -22,12 +24,23 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={ecommerce}
               isBlog={false}
               title="Portfolio"
               description="Personal Portfolio using React JS"
               ghLink="https://github.com/sbsatya82/Portfolio-"
               demoLink="https://portfolio-olive-six-92.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio}
+              isBlog={false}
+              title="Ecommerce Site"
+              description="Ecommerce site using MERN"
+              // ghLink="https://github.com/sbsatya82/Portfolio-"
+              demoLink="https://mangalamedicare.store/"
             />
           </Col>
 
